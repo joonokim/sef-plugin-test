@@ -103,10 +103,16 @@ SEF 2026 기반 프로젝트의 초기 구조를 생성합니다. 공공(정부/
 ### 초기화 단계
 
 1. 프로젝트 루트 디렉토리 생성
-2. `build.gradle.kts` 설정 (Spring Boot 2.7.18, Java 8, WAR 패키징)
-3. `src/main/java/` 패키지 구조 생성 (core, infra, modules)
-4. `src/main/resources/` 설정 파일 생성
-5. `frontend/` 디렉토리 생성 후 `sef-2026:frontend-init` 호출
+
+2. 병렬 실행 (독립적이므로 동시 처리):
+   - **[A] 백엔드 초기화**
+     - `build.gradle.kts` 설정 (Spring Boot 2.7.18, Java 8, WAR 패키징)
+     - `src/main/java/` 패키지 구조 생성 (core, infra, modules)
+     - `src/main/resources/` 설정 파일 생성
+   - **[B] 프론트엔드 초기화**
+     - `frontend/` 디렉토리 생성 후 `sef-2026:frontend-init` 호출
+
+3. 개발 팀 구성: `sef-2026:team-setup` 호출
 
 ### 참고 자료
 
@@ -242,11 +248,15 @@ NUXT_PUBLIC_API_BASE_URL=http://localhost:8080/api
 ### 초기화 단계
 
 1. 프로젝트 루트 디렉토리 생성
-2. 백엔드 프로젝트 초기화 (Spring Boot / Node.js / Python 선택)
-3. 프론트엔드 프로젝트 초기화 → `sef-2026:frontend-init` 호출
-4. Docker Compose 설정
-5. CI/CD 파이프라인 템플릿 생성
-6. 환경변수 관리 설정 (.env.example)
+
+2. 병렬 실행 (독립적이므로 동시 처리):
+   - **[A] 백엔드 프로젝트 초기화** (Spring Boot / Node.js / Python 선택)
+   - **[B] 프론트엔드 프로젝트 초기화** → `sef-2026:frontend-init` 호출
+   - **[C] Docker Compose + CI/CD 설정**
+
+3. 환경변수 관리 설정 (.env.example)
+
+4. 개발 팀 구성: `sef-2026:team-setup` 호출
 
 ### 참고 자료
 
@@ -258,7 +268,7 @@ NUXT_PUBLIC_API_BASE_URL=http://localhost:8080/api
 
 프로젝트 초기화 완료 후:
 
-1. **프론트엔드 초기화**: `sef-2026:frontend-init` 스킬을 실행하여 Nuxt 4 프론트엔드 scaffolding 생성
+1. **개발 팀 구성**: `sef-2026:team-setup` 스킬을 실행하여 AI 에이전트 팀 구성. ROADMAP.md 기반 작업 분해 및 병렬 개발 시작.
 2. **백엔드 개발**: 프로젝트 유형에 따라 `sef-2026:backend-public` 또는 `sef-2026:backend-private` 사용
 3. **배포**: 프로젝트 유형에 따라 `sef-2026:deployment-public` 또는 `sef-2026:deployment-private` 사용
 
@@ -271,4 +281,5 @@ NUXT_PUBLIC_API_BASE_URL=http://localhost:8080/api
 - `sef-2026:deployment-public` -- 공공 배포
 - `sef-2026:deployment-private` -- 민간 배포
 - `sef-2026:tech-stack` -- 기술 스택 선택 가이드
+- `sef-2026:team-setup` -- AI 개발 팀 구성
 - `sef-2026:workflow-guide` -- 프로젝트 워크플로우 가이드
