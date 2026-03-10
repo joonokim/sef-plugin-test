@@ -1,0 +1,5 @@
+{
+  "name": "sef-2026-table-structure",
+  "description": "DB 스키마 조회 스킬 (PostgreSQL, MySQL, SQLite, Oracle)",
+  "version": "1.0.0"
+}

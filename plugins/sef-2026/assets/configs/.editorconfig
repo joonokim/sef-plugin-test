@@ -1,0 +1,52 @@
+# EditorConfig - 일관된 코딩 스타일 유지
+# https://editorconfig.org
+
+root = true
+
+# 모든 파일
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# JavaScript, TypeScript, Vue
+[*.{js,ts,jsx,tsx,vue}]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# JSON, YAML
+[*.{json,yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Java
+[*.java]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# XML (Spring 설정 파일 등)
+[*.xml]
+indent_style = space
+indent_size = 2
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+
+# Gradle
+[*.gradle]
+indent_style = space
+indent_size = 4
+
+# Properties
+[*.properties]
+charset = utf-8

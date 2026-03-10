@@ -1,0 +1,64 @@
+{
+  "name": "sqisoft-sef-2026",
+  "owner": {
+    "name": "SQI Energy"
+  },
+  "metadata": {
+    "description": "공공/민간 서비스 개발을 위한 Claude Code 스킬 및 에이전트 모음",
+    "version": "2.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sef-2026",
+      "source": "./plugins/sef-2026",
+      "description": "공통 프론트엔드(Nuxt 4), 기술 스택 가이드, 에이전트, 참조 문서",
+      "version": "2.1.0",
+      "author": {
+        "name": "SQI Energy"
+      },
+      "homepage": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "repository": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "keywords": ["nuxt4", "frontend", "tech-stack", "agents", "korean"],
+      "category": "development"
+    },
+    {
+      "name": "sef-2026-private",
+      "source": "./plugins/sef-2026-private",
+      "description": "민간 서비스 개발 스킬 (Spring Boot JAR, JPA, Redis, Docker, Kubernetes, AWS, CI/CD)",
+      "version": "1.0.0",
+      "author": {
+        "name": "SQI Energy"
+      },
+      "homepage": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "repository": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "keywords": ["spring-boot", "jpa", "docker", "kubernetes", "private-sector", "microservices", "korean"],
+      "category": "development"
+    },
+    {
+      "name": "sef-2026-public",
+      "source": "./plugins/sef-2026-public",
+      "description": "공공 서비스 개발 스킬 (Spring Boot WAR, MyBatis, 전자정부프레임워크, DDD, JEUS/WebLogic)",
+      "version": "1.0.0",
+      "author": {
+        "name": "SQI Energy"
+      },
+      "homepage": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "repository": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "keywords": ["spring-boot", "mybatis", "egovframework", "war", "public-sector", "ddd", "korean"],
+      "category": "development"
+    },
+    {
+      "name": "sef-2026-table-structure",
+      "source": "./plugins/sef-2026-table-structure",
+      "description": "DB 스키마 조회 스킬 (PostgreSQL, MySQL, SQLite, Oracle)",
+      "version": "1.0.0",
+      "author": {
+        "name": "SQI Energy"
+      },
+      "homepage": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "repository": "https://github.com/sqi-energy/sqisoft-sef-2026-plugin",
+      "keywords": ["db-schema", "table-structure", "postgresql", "mysql", "sqlite", "oracle", "korean"],
+      "category": "development"
+    }
+  ]
+}

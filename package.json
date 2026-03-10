@@ -1,0 +1,30 @@
+{
+	"name": "sqisoft-sef-2026-plugin",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write \"**/*.{js,ts,vue,json,css,scss,md}\"",
+		"format:check": "prettier --check \"**/*.{js,ts,vue,json,css,scss,md}\""
+	},
+	"dependencies": {
+		"prettier": "^3.8.1"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3.3.1",
+		"@typescript-eslint/eslint-plugin": "^8.54.0",
+		"@typescript-eslint/parser": "^8.54.0",
+		"eslint": "^9.18.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-import-x": "^4.5.0",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-vue": "^10.7.0",
+		"globals": "^17.2.0",
+		"shadcn-vue": "^2.4.3",
+		"vue-eslint-parser": "^10.2.0"
+	}
+}

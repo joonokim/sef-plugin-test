@@ -1,0 +1,5 @@
+{
+  "name": "sef-2026-private",
+  "description": "민간 서비스 개발 스킬 (Spring Boot JAR, JPA, Redis, Docker, Kubernetes, AWS, CI/CD)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+# JetBrains IDEs (IntelliJ IDEA, PyCharm, etc.)
+.idea/
+
+# AI Assistant
+.aiassistant
+
+# Node.js
+node_modules
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Git
+*.orig
+*.rej
+
+/nul
+
+
+.claude

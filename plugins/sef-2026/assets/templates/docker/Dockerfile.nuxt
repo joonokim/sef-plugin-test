@@ -1,0 +1,51 @@
+# Nuxt 4 프로젝트용 Dockerfile
+
+# Build stage
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# 패키지 파일 복사
+COPY package*.json ./
+COPY pnpm-lock.yaml* ./
+
+# pnpm 설치 및 의존성 설치
+RUN npm install -g pnpm
+RUN pnpm install --frozen-lockfile
+
+# 소스 코드 복사
+COPY . .
+
+# Nuxt 빌드
+RUN pnpm build
+
+# Production stage
+FROM node:20-alpine
+
+WORKDIR /app
+
+# 보안: non-root 사용자 생성
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nodejs -u 1001
+
+# 빌드 결과물만 복사
+COPY --from=builder --chown=nodejs:nodejs /app/.output ./.output
+COPY --from=builder --chown=nodejs:nodejs /app/package.json ./
+
+# 사용자 전환
+USER nodejs
+
+# 포트 노출
+EXPOSE 3000
+
+# 환경 변수
+ENV HOST=0.0.0.0
+ENV PORT=3000
+ENV NODE_ENV=production
+
+# 헬스체크
+HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
+
+# Nuxt 실행
+CMD ["node", ".output/server/index.mjs"]
