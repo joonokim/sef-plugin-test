@@ -1,4 +1,4 @@
-# sqisoft-sef-2026-plugin
+# sef-plugin-test
 
 공공/민간 서비스 개발을 위한 Claude Code 플러그인 마켓플레이스입니다.
 
@@ -7,20 +7,20 @@
 ### 1. 마켓플레이스 추가
 
 ```bash
-/plugin marketplace add sqi-energy/sqisoft-sef-2026-plugin
+/plugin marketplace add joonokim/sef-plugin-test
 ```
 
 ### 2. 플러그인 설치
 
 ```bash
 # 공통 (프론트엔드, 기술 스택, 에이전트)
-/plugin install sef-2026@sqisoft-sef-2026
+/plugin install sef-2026@sef-plugin-test
 
 # 민간 서비스 스킬
-/plugin install sef-2026-private@sqisoft-sef-2026
+/plugin install sef-2026-private@sef-plugin-test
 
 # 공공 서비스 스킬
-/plugin install sef-2026-public@sqisoft-sef-2026
+/plugin install sef-2026-public@sef-plugin-test
 ```
 
 ### 로컬 테스트 (개발자용)
@@ -30,9 +30,9 @@
 /plugin marketplace add ./
 
 # 플러그인 설치
-/plugin install sef-2026@sqisoft-sef-2026
-/plugin install sef-2026-private@sqisoft-sef-2026
-/plugin install sef-2026-public@sqisoft-sef-2026
+/plugin install sef-2026@sef-plugin-test
+/plugin install sef-2026-private@sef-plugin-test
+/plugin install sef-2026-public@sef-plugin-test
 ```
 
 ---
@@ -402,6 +402,6 @@ plugins/
 
 ---
 
-**작성자**: SQI Energy
+**작성자**: joonokim
 **최종 수정일**: 2026-02-09
 **버전**: 2.1.0
