@@ -5,33 +5,20 @@
   },
   "metadata": {
     "description": "공공/민간 서비스 개발을 위한 Claude Code 스킬 및 에이전트 모음",
-    "version": "3.0.0"
+    "version": "3.1.0"
   },
   "plugins": [
     {
       "name": "sef-2026",
       "source": "./plugins/sef-2026",
-      "description": "공공/민간 통합 프론트엔드(Nuxt 4), 백엔드, 배포, 기술 스택, 에이전트, 참조 문서",
-      "version": "3.0.0",
+      "description": "공공/민간 통합 프론트엔드(Nuxt 4), 백엔드, 배포, 기술 스택, DB 스키마 조회, 에이전트, 참조 문서",
+      "version": "3.1.0",
       "author": {
         "name": "joonokim"
       },
       "homepage": "https://github.com/joonokim/sef-plugin-test",
       "repository": "https://github.com/joonokim/sef-plugin-test",
-      "keywords": ["nuxt4", "frontend", "spring-boot", "mybatis", "jpa", "docker", "kubernetes", "egovframework", "korean"],
-      "category": "development"
-    },
-    {
-      "name": "sef-2026-table-structure",
-      "source": "./plugins/sef-2026-table-structure",
-      "description": "DB 스키마 조회 스킬 (PostgreSQL, MySQL, SQLite, Oracle)",
-      "version": "1.0.0",
-      "author": {
-        "name": "joonokim"
-      },
-      "homepage": "https://github.com/joonokim/sef-plugin-test",
-      "repository": "https://github.com/joonokim/sef-plugin-test",
-      "keywords": ["db-schema", "table-structure", "postgresql", "mysql", "sqlite", "oracle", "korean"],
+      "keywords": ["nuxt4", "frontend", "spring-boot", "mybatis", "jpa", "docker", "kubernetes", "egovframework", "db-schema", "table-structure", "postgresql", "mysql", "sqlite", "oracle", "korean"],
       "category": "development"
     }
   ]

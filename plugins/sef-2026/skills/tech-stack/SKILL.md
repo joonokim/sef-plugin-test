@@ -35,8 +35,6 @@ WAS: JEUS / WebLogic / Tomcat
 배포: WAR 패키징
 ```
 
-자세한 내용은 `references/public-tech-stack.md` 참조
-
 ### 민간 기업 프로젝트
 
 **특징**:
@@ -53,8 +51,6 @@ WAS: JEUS / WebLogic / Tomcat
 인프라: Docker, Kubernetes, AWS
 배포: 컨테이너 기반
 ```
-
-자세한 내용은 `references/private-tech-stack.md` 참조
 
 ## 프론트엔드 기술 스택
 
@@ -115,8 +111,6 @@ WAS: JEUS / WebLogic / Tomcat
 - 단순한 SPA
 - 민간 프로젝트
 
-자세한 내용은 `references/frontend-options.md` 참조
-
 ## 백엔드 기술 스택
 
 ### Spring Boot (Java/Kotlin)
@@ -156,8 +150,6 @@ WAS: JEUS / WebLogic / Tomcat
 - 실시간 서비스 (WebSocket)
 - 마이크로서비스
 
-자세한 내용은 `references/backend-options.md` 참조
-
 ## 데이터베이스 선택
 
 ### Oracle / Tibero
@@ -195,8 +187,6 @@ WAS: JEUS / WebLogic / Tomcat
 - 스키마가 자주 변경되는 서비스
 - 대량의 비정형 데이터
 - 실시간 분석
-
-자세한 내용은 `references/database-options.md` 참조
 
 ## ORM/데이터 액세스 계층
 
@@ -315,16 +305,11 @@ WAS: JEUS / WebLogic / Tomcat
 배포: Docker + AWS EC2
 ```
 
-## 참고 자료
-
-- `references/frontend-options.md`: 프론트엔드 기술 스택 비교
-- `references/backend-options.md`: 백엔드 기술 스택 비교
-- `references/database-options.md`: 데이터베이스 선택 가이드
-- `references/public-tech-stack.md`: 공공 서비스 추천 스택
-- `references/private-tech-stack.md`: 민간 서비스 추천 스택
-
 ## 관련 스킬
 
-- `project-init` (sef-2026-public 플러그인): 공공 프로젝트 초기화
-- `project-init` (sef-2026-private 플러그인): 민간 프로젝트 초기화
+- `setup` (이 플러그인): 공공/민간 프로젝트 초기 구조 생성
 - `frontend` (이 플러그인): 공통 프론트엔드 개발
+- `backend-public` (이 플러그인): 공공 프로젝트 백엔드 개발
+- `backend-private` (이 플러그인): 민간 서비스 백엔드 개발
+- `deployment-public` (이 플러그인): 공공 프로젝트 배포 가이드
+- `deployment-private` (이 플러그인): 민간 서비스 배포 가이드

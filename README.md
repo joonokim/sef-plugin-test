@@ -13,11 +13,8 @@
 ### 2. 플러그인 설치
 
 ```bash
-# 공공/민간 통합 플러그인 (프론트엔드, 백엔드, 배포, 기술 스택, 에이전트)
+# 공공/민간 통합 플러그인 (프론트엔드, 백엔드, 배포, 기술 스택, DB 스키마 조회, 에이전트)
 /plugin install sef-2026@sef-plugin-test
-
-# DB 스키마 조회 (선택)
-/plugin install sef-2026-table-structure@sef-plugin-test
 ```
 
 ### 로컬 테스트 (개발자용)
@@ -112,8 +109,14 @@ plugins/
 │   │   ├── tech-stack/                          # 기술 스택 가이드
 │   │   │   └── SKILL.md
 │   │   │
-│   │   └── workflow-guide/                      # 워크플로우 가이드
-│   │       └── SKILL.md
+│   │   ├── workflow-guide/                      # 워크플로우 가이드
+│   │   │   └── SKILL.md
+│   │   │
+│   │   └── db-schema-query/                     # DB 스키마 조회
+│   │       ├── SKILL.md
+│   │       ├── .env.example
+│   │       └── scripts/
+│   │           └── db_schema_inspector.py
 │   │
 │   ├── agents/
 │   │   ├── automation/ (5개)
@@ -122,10 +125,6 @@ plugins/
 │   │
 │   ├── reference/
 │   └── assets/
-│
-└── sef-2026-table-structure/                    # DB 스키마 조회
-    ├── .claude-plugin/
-    └── skills/
 ```
 
 ---
@@ -143,6 +142,7 @@ plugins/
 | `page-generator` | 목록/상세/등록/수정 CRUD 페이지 생성 |
 | `tech-stack` | 프로젝트 유형별 기술 스택 추천 |
 | `workflow-guide` | Phase 1~6 워크플로우 가이드 |
+| `db-schema-query` | DB 스키마 조회 (PostgreSQL, MySQL, SQLite, Oracle) |
 
 ### 공공 프로젝트 스킬
 
@@ -266,6 +266,11 @@ plugins/
 
 ## 변경 이력
 
+### v3.1.0 (2026-03-10)
+- `sef-2026-table-structure` 플러그인을 `sef-2026`으로 통합
+- `db-schema-query` 스킬 추가 (DB 스키마 조회)
+- 단일 플러그인으로 모든 기능 관리
+
 ### v3.0.0 (2026-03-10)
 - **공공/민간 스킬을 `sef-2026` 단일 플러그인으로 통합**
 - `sef-2026-public`, `sef-2026-private` 플러그인 제거
@@ -295,4 +300,4 @@ plugins/
 
 **작성자**: joonokim
 **최종 수정일**: 2026-03-10
-**버전**: 3.0.0
+**버전**: 3.1.0
