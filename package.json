@@ -1,5 +1,5 @@
 {
-	"name": "sqisoft-sef-2026-plugin",
+	"name": "sef-plugin-test",
 	"type": "module",
 	"private": true,
 	"scripts": {

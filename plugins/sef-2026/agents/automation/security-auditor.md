@@ -680,4 +680,4 @@ http.csrf().csrfTokenRepository(...)
 
 **Version**: 1.0.0
 **Last Updated**: 2026-02-03
-**Author**: sqisoft-sef-2026-plugin
+**Author**: sef-plugin-test

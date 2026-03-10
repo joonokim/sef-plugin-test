@@ -2,8 +2,8 @@
   "mcpServers": {
     "playwright": {
       "type": "stdio",
-      "command": "cmd",
-      "args": ["/c", "npx", "@playwright/mcp@latest"],
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
       "env": {}
     },
     "context7": {
@@ -12,13 +12,13 @@
     },
     "sequential-thinking": {
       "type": "stdio",
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-sequential-thinking"]
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
     },
     "shadcnVue": {
       "type": "stdio",
-      "command": "cmd",
-      "args": ["/c", "npx", "shadcn-vue@latest", "mcp"],
+      "command": "npx",
+      "args": ["shadcn-vue@latest", "mcp"],
       "env": {}
     }
   }

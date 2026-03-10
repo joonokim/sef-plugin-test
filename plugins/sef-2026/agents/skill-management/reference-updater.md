@@ -17,7 +17,7 @@ color: orange
 
 ## 참조 프로젝트 경로
 
-- **참조 프로젝트**: `D:\workspace\2026\001_sqisoft-sef-2026\02_source\sqisoft-sef-2026`
+- **참조 프로젝트**: `/Users/joono/Projects/sef-plugin-test`
 - **프론트엔드**: `{참조프로젝트}/frontend/`
 - **백엔드**: `{참조프로젝트}/src/`
 
