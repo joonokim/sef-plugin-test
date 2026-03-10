@@ -17,16 +17,6 @@
 /plugin install sef-2026@sef-plugin-test
 ```
 
-### 로컬 테스트 (개발자용)
-
-```bash
-# 로컬 마켓플레이스 추가
-/plugin marketplace add ./
-
-# 플러그인 설치
-/plugin install sef-2026@sef-plugin-test
-```
-
 ---
 
 ## 목차
